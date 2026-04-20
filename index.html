@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Growth Hackers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,50 +33,58 @@
 
     <div class="cards">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc">
+            </div>
             <h3>🔍 SEO</h3>
             <p>Improve search rankings</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            </div>
             <h3>📱 Social Media</h3>
             <p>Boost engagement</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+            </div>
             <h3>💰 Ads</h3>
             <p>Maximize ROI</p>
         </div>
     </div>
 
     <h2>Pricing</h2>
-    <table>
-        <tr>
-            <th>Service</th>
-            <th>Description</th>
-            <th>Price</th>
-        </tr>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
 
-        <tr>
-            <td>SEO</td>
-            <td>Website ranking improvement</td>
-            <td>₹5000</td>
-        </tr>
+            <tr>
+                <td>SEO</td>
+                <td>Website ranking improvement</td>
+                <td>₹5000</td>
+            </tr>
 
-        <tr>
-            <td>Social Media</td>
-            <td>Account management</td>
-            <td>₹7000</td>
-        </tr>
+            <tr>
+                <td>Social Media</td>
+                <td>Account management</td>
+                <td>₹7000</td>
+            </tr>
 
-        <tr>
-            <td>Ads</td>
-            <td>Paid campaigns</td>
-            <td>₹10000</td>
-        </tr>
-    </table>
+            <tr>
+                <td>Ads</td>
+                <td>Paid campaigns</td>
+                <td>₹10000</td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <!-- STATS -->
@@ -100,10 +109,11 @@
 <section id="contact" class="container">
     <h2>Contact Us</h2>
 
-    <form>
+    <!-- FORM DIRECTLY BELOW TITLE -->
+    <form class="contact-form">
         <input type="text" placeholder="👤 Your Name" required>
         <input type="email" placeholder="📧 Your Email" required>
-        <textarea placeholder="✉️ Your Message" rows="5"></textarea>
+        <textarea placeholder="✉️ Your Message" rows="5" required></textarea>
         <button type="submit">Submit</button>
     </form>
 
