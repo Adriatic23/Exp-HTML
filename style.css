@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 139, 0.274);
+    fontcolor: rgba(255, 255, 255, 0.094);
+    font-family: Arial;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1557838923-2985c318be48') no-repeat center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: cyan;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-color: black;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: teal;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+tr:hover {
+    background: #f2f2f2;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: auto;
+    animation: slideUp 1s ease;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: teal;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: black;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
