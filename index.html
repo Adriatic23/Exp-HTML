@@ -5,121 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<script src="script.js"></script>
 <body>
 
 <header>
     <h2>🚀 Growth Hackers</h2>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#stats">Stats</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<!-- HOME -->
-<section id="home" class="hero">
+<!-- HERO -->
+<section class="hero">
     <div class="hero-content">
         <h1>Grow Your Business Online</h1>
         <p>SEO • Social Media • Ads</p>
-        <a href="#services" class="btn">Explore Services</a>
-    </div>
+        <p id="quote">Loading quote...</p>
+<p id="author"></p>
+<section class="news">
+    <h2>Latest Business News</h2>
+
+    <button onclick="getNews()" class="btn">Load News</button>
+
+    <div id="news-container"></div>
 </section>
-
-<!-- SERVICES -->
-<section id="services" class="container">
-    <h2>Our Services</h2>
-
-    <div class="cards">
-        <div class="card">
-            <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc">
-            </div>
-            <h3>🔍 SEO</h3>
-            <p>Improve search rankings</p>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-            </div>
-            <h3>📱 Social Media</h3>
-            <p>Boost engagement</p>
-        </div>
-
-        <div class="card">
-            <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
-            </div>
-            <h3>💰 Ads</h3>
-            <p>Maximize ROI</p>
-        </div>
-    </div>
-
-    <h2>Pricing</h2>
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-                <th>Price</th>
-            </tr>
-
-            <tr>
-                <td>SEO</td>
-                <td>Website ranking improvement</td>
-                <td>₹5000</td>
-            </tr>
-
-            <tr>
-                <td>Social Media</td>
-                <td>Account management</td>
-                <td>₹7000</td>
-            </tr>
-
-            <tr>
-                <td>Ads</td>
-                <td>Paid campaigns</td>
-                <td>₹10000</td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<!-- STATS -->
-<section id="stats" class="stats">
-    <div class="stat-box">
-        <h2>500+</h2>
-        <p>Clients</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>1200+</h2>
-        <p>Projects</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Years</p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="container">
-    <h2>Contact Us</h2>
-
-    <!-- FORM DIRECTLY BELOW TITLE -->
-    <form class="contact-form">
-        <input type="text" placeholder="👤 Your Name" required>
-        <input type="email" placeholder="📧 Your Email" required>
-        <textarea placeholder="✉️ Your Message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-
-    <h2>Our Location 📍</h2>
-    <div class="map">
-        <iframe src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <a href="services.html" class="btn">Explore Services</a>
     </div>
 </section>
 
